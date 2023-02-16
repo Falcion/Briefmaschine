@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Briefmaschine
 {
@@ -43,7 +39,18 @@ namespace Briefmaschine
 
         public static void Error(Exception exception, bool is_io = true, int refer = int.MaxValue)
         {
-            string prebuilded_entry = $"/APP-{refer}][STACKTRACE: _A11DUMP] {DateTime.Now:dd.MM.yyyy HH:mm:ss} - {message}";
+            string message = exception.Message;
+
+            var targetsite = exception.TargetSite;
+
+            string? _target = string.Empty;
+
+            if (targetsite == null)
+                _target = targetsite?.Name;
+
+            _target ??= "UNDEFINED";
+
+            string prebuilded_entry = $"/APP-{refer}][STACKTRACE: _A11DUMP][TARGET: {_target}] {DateTime.Now:dd.MM.yyyy HH:mm:ss} - {message}";
 
             LOGGER_CONSTRUCT(prebuilded_entry, is_io, Logs.ERROR2);
         }
@@ -64,8 +71,7 @@ namespace Briefmaschine
             if (stackframe != null)
                 stacktrace = stackframe.GetMethod()?.Name;
 
-            if (stacktrace == null)
-                stacktrace = "UNDEFINED";
+            stacktrace ??= "UNDEFINED";
 
             dynamic predefined_color;
 
@@ -158,7 +164,11 @@ namespace Briefmaschine
 
             public static void UpdateIO(string message, string? path)
             {
-                if(path != null)
+                /* Instead of a custom logging method, we need to find a file for IO's future work: we 
+                 * throw exceptions because this is endpoint code without user intervention.
+                 */
+
+                if (path != null)
                 {
                     string? dest = Path.GetDirectoryName(path);
 
@@ -174,6 +184,9 @@ namespace Briefmaschine
                 }
                 else
                 {
+                    /* Double the value of the ENV variable to escape the nullable value.
+                     */
+
                     string? LOGS_PATH = Environment.GetEnvironmentVariable("LOGS_PATH");
 
                     if (LOGS_PATH == null) EnsureIO();
@@ -181,12 +194,10 @@ namespace Briefmaschine
 
                 path = Environment.GetEnvironmentVariable("LOGS_PATH");
 
-                using(var writer = File.AppendText(path!))
-                {
-                    writer.Write(message + "\n");
+                using var writer = File.AppendText(path!);
 
-                    writer.Close();
-                }
+                writer.Write(message + "\n");
+                writer.Close();
             }
         }
 
@@ -194,6 +205,10 @@ namespace Briefmaschine
         {
             public static void Log(string message, string? code_pos, string? type, Colors? colors, bool is_io = false, string? path = null)
             {
+                /* Here, because the constructor is called directly by the code and not by essentials, we 
+                 * use a different number of frames.
+                 */
+
                 StackFrame? stackframe = new(1);
 
                 string? stacktrace = null;
@@ -201,19 +216,23 @@ namespace Briefmaschine
                 if (stackframe != null)
                     stacktrace = stackframe.GetMethod()?.Name;
 
-                if (stacktrace == null)
-                    stacktrace = "UNDEFINED";
+                /* Use null-coasceling operators to improve readability, and declare first-instance 
+                 * constructs when entering audit messages.
+                 */
 
-                if (code_pos == null)
-                    code_pos = "DEFAULT";
+                stacktrace ??= "UNDEFINED";
 
-                if (type == null)
-                    type = "CUSTOM";
+                code_pos ??= "DEFAULT";
 
-                if (colors == null)
-                    colors = new Colors();
+                type ??= "CUSTOM";
+
+                colors ??= new Colors();
 
                 string entry = $"[{type}/{code_pos}][STACKTRACE: {stacktrace}] {DateTime.Now:dd.MM.yyyy HH:mm:ss} - {message}";
+
+                /* Here we use similar but different IO's in this custom logging update method, but we
+                 * can't throw exceptions and need to provide some context due to the end task of the code.
+                 */
 
                 if (is_io)
                 {
