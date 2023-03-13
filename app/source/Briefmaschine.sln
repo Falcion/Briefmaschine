@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Briefmaschine", "Briefmaschine.csproj", "{D343B8CD-29D8-4400-BB63-AB3F1A320648}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Briefmaschine", "Briefmaschine.csproj", "{E3F28279-F092-4A06-B73B-77C4B5EBE77A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D343B8CD-29D8-4400-BB63-AB3F1A320648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D343B8CD-29D8-4400-BB63-AB3F1A320648}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D343B8CD-29D8-4400-BB63-AB3F1A320648}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D343B8CD-29D8-4400-BB63-AB3F1A320648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3F28279-F092-4A06-B73B-77C4B5EBE77A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3F28279-F092-4A06-B73B-77C4B5EBE77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F28279-F092-4A06-B73B-77C4B5EBE77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3F28279-F092-4A06-B73B-77C4B5EBE77A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A6EDAF78-CCD7-4ED9-967D-B1A13B0B53AE}
+		SolutionGuid = {8E00832F-769B-4AEC-AF02-DD29A5BBA8E3}
 	EndGlobalSection
 EndGlobal
