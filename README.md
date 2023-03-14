@@ -31,9 +31,9 @@ Roadmap
 -------
 
 - [x] Create a demo version of this package to demonstrate its future;
-- [ ] Refactor the common documentation of project;
-- [ ] Refactor the main functionality-code of the package;
-- [ ] Implement XML-documentation into the package's code;
+- [x] Refactor the common documentation of project;
+- [x] Refactor the main functionality-code of the package;
+- [x] Implement XML-documentation into the package's code;
 - [ ] Write an infrastructure in the repository;
 - [ ] Design and publish first completed changelog;
 - [ ] Publish package on NUGET.
