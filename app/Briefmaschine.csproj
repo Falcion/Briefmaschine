@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <SignAssembly>False</SignAssembly>
+    <Title>Briefmaschine</Title>
+    <Version>1.6.11.0</Version>
+    <Authors>Falcion</Authors>
+    <Description>.NET package about logging audit idea with IO submodule and system of constructing and colouring messages</Description>
+    <Copyright>MIT License</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/Falcion/Briefmaschine/</RepositoryUrl>
+    <PackageTags>package;dotnet;logging;</PackageTags>
+    <IncludeSymbols>True</IncludeSymbols>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Configurations>Debug;Release;Publish</Configurations>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
