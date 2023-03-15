@@ -21,6 +21,7 @@
  what it does and try to interest contributor or user to
  your project. 
  -->
+
 About the project
 -----------------
 
@@ -28,11 +29,6 @@ In many other programming languages, JS for an example, there are multiple commo
 
 Unfortunately, C# doesn't have something like that in its source code and this project delivers solution for this topic - combined with other functionality an advanced logger modulae.
 
-<!-- Created with:
- Paragraph of references not about licensing, but more
- about with which you created this, what inspired you and
- so go on: use creativity and your interest in stack of technologies.
- -->
 ### Built-with
 
 Project was created, inspired and built with this wonderfuls:
@@ -44,21 +40,11 @@ Project was created, inspired and built with this wonderfuls:
 
 <p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
 
-<!-- Introduction:
- Here, you start to introduce your project in 
- format of engineerings documentation: write
- a little commentary and go on about more important things.
- -->
 Getting started
 ---------------
 
 Before using this project or working with its source code, read this paragraph so that you wouldn't have unnecessary questions or problems.
 
-<!-- Prerequisites set:
- In this little paragraph, write what will be
- required for your project to work or contributed to
- successfully. 
- -->
 ### Prerequisites
 
 Before using this application, ensure you met this requirements:
@@ -68,11 +54,6 @@ Before using this application, ensure you met this requirements:
 
 <p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
 
-<!-- Installation guidelines:
- Write a step-by-step guidelines for different ways
- to install your project, where you must at least write
- about installation of source code of project.
- -->
 ### Installation
 
 Permission is granted for free use in any of your products.
@@ -94,11 +75,6 @@ If you use a different IDE without native support for NUGET, read this article: 
 
 <p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
 
-<!-- Usage:
- Define where your product can be used:
- write down some functionality of project, or how
- and where it can be used. 
- -->
 Usage
 -----
 
