@@ -140,7 +140,13 @@ If you have a suggestion that will improve this project: fork the repository and
 3. Make your changes;
 4. Stage made changes and push them - [step-by-step guide](https://dev.to/mrfrontend/git-101--step-2-add-stage-commit--push-3p3p) is attached;
 5. Create a pull request;
-6. Squash commits for cleaner history.
+6. Squash commits for cleaner history:
+
+    ```powershell
+    git checkout -b [BRANCH_NAME]
+    git commit -m [COMMIT_MESSAGE]
+    git push origin [BRANCH_NAME]
+    ```
 
 **For one-single file contributioning, use a more quicker way without forking the repository through website.**
 
