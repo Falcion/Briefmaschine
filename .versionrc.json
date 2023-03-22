@@ -1,17 +1,16 @@
 {
     "types": [    
-        { "type": "FEAT", "section": "Features" },    
-        { "type": "BUILD", "hidden": true },    
-        { "type": "REF", "hidden": true },    
-        { "type": "BREAKING CHANGES", "section": "Breaking changes" },    
-        { "type": "CI", "hidden": true },    
-        { "type": "FIX", "section": "Bug Fixes" },    
-        { "type": "CHORE", "hidden": true },    
-        { "type": "DOCS", "hidden": true },    
-        { "type": "STYLE", "hidden": true },    
-        { "type": "REFACTOR", "section": "Refactoring" },    
-        { "type": "PERF", "section": "Perfomance" },    
-        { "type": "TEST", "hidden": true }  
+        { "type": "feat", "section": "Features" },    
+        { "type": "build", "hidden": true },    
+        { "type": "ref", "hidden": true },        
+        { "type": "ci", "hidden": true },    
+        { "type": "fix", "section": "Bug Fixes" },    
+        { "type": "chore", "hidden": true },    
+        { "type": "docs", "hidden": true },    
+        { "type": "style", "hidden": true },    
+        { "type": "refactor", "section": "Refactoring" },    
+        { "type": "perf", "section": "Perfomance" },    
+        { "type": "test", "hidden": true }  
     ],
     "commitUrlFormat": "https://github.com/mokkapps/changelog-generator-demo/commits/{{hash}}",
     "compareUrlFormat": "https://github.com/mokkapps/changelog-generator-demo/compare/{{previousTag}}...{{currentTag}}"
