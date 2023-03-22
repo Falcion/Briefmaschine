@@ -1,0 +1,54 @@
+{
+  "name": "briefmaschine",
+  "version": "0.0.6",
+  "description": ".NET package about logging audit idea with IO submodule and system of constructing and colouring messages",
+  "main": "",
+  "directories": {
+    "doc": "docs",
+    "lib": "source"
+  },
+  "author": "Falcion",
+  "license": "MIT",
+  "keywords": [
+    "package",
+    "dotnet",
+    "logging"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Falcion/Briefmaschine+git"
+  },
+  "badges": [
+    {
+      "url": "https://github.com/Falcion/Briefmaschine/actions/workflows/codeql.yml/badge.svg",
+      "href": "https://github.com/Falcion/Briefmaschine/actions/workflows/codeql.yml",
+      "description": "codeql"
+    },
+    {
+      "url": "https://github.com/Falcion/Briefmaschine/actions/workflows/dotnet.yml/badge.svg",
+      "href": "https://github.com/Falcion/Briefmaschine/actions/workflows/dotnet.yml",
+      "description": "dotnet"
+    },
+    {
+      "url": "https://img.shields.io/nuget/dt/Briefmaschine",
+      "href": "https://www.nuget.org/packages/Briefmaschine",
+      "description": "nuget"
+    }
+  ],
+  "homepage": "https://github.com/Falcion/Briefmaschine+git",
+  "readme": "./README.md",
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "husky": "^8.0.0",
+    "standard-version": "^9.5.0"
+  },
+  "scripts": {
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major",
+    "test": "",
+    "prepare": "husky install"
+  }
+}

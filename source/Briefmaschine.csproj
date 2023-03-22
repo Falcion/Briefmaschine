@@ -7,7 +7,7 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <SignAssembly>False</SignAssembly>
     <Title>Briefmaschine</Title>
-    <Version>1.6.11.0</Version>
+    <Version>0.0.6</Version>
     <Authors>Falcion</Authors>
     <Description>.NET package about logging audit idea with IO submodule and system of constructing and colouring messages</Description>
     <Copyright>MIT License</Copyright>
