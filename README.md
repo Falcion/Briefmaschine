@@ -142,7 +142,7 @@ If you have a suggestion that will improve this project: fork the repository and
 5. Create a pull request;
 6. Squash commits for cleaner history.
 
-For one-single file contributioning, use a more quicker way without forking the repository through website.
+**For one-single file contributioning, use a more quicker way without forking the repository through website.**
 
 More about it in this article: in [official GIT docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork/) about syncing one-file fork.
 
