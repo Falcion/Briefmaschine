@@ -38,20 +38,20 @@ Final structure of HEADER param:
 ```
 
 - param `<TYPE>` is defined by a range of categories, there is a list of them:\
-  - **`BUILD`** - changes that affect the build system or external dependencies (for example GULP or NPM);
-  - **`CI`** - changes to CI and workflows configurations files and scripts;
-  - **`DOCS`** - changes only about documentation (including repository files like README);
-  - **`FEAT`** - new feature in future release;
-  - **`PERF`** - code changes improving and working with perfomace preferences;
-  - **`REFACTOR`** - code change neither fixes something nor adds a feature;
-  - **`REF`** - referencing something entirely new based on old changes (in case of full rework of a repository);
-  - **`FIX`** - code changes defining fix of a bugs, crashes and some misimprovements (fast-deploy cases);
+  - **`build`** - changes that affect the build system or external dependencies (for example GULP or NPM);
+  - **`ci`** - changes to CI and workflows configurations files and scripts;
+  - **`docs`** - changes only about documentation (including repository files like README);
+  - **`feat`** - new feature in future release;
+  - **`perf`** - code changes improving and working with perfomace preferences;
+  - **`refactor`** - code change neither fixes something nor adds a feature;
+  - **`ref`** - referencing something entirely new based on old changes (in case of full rework of a repository);
+  - **`fix`** - code changes defining fix of a bugs, crashes and some misimprovements (fast-deploy cases);
 
 - param `<SCOPE>` should be a name of the package affected or a code block (as perceived by the person reading changelog generated from the commit messages) - names below are given for an example:
     > None or empty strings which useful for a test or a refactor changes that are done across all packages;
-    - **`CALCULUS`** - code changes which are working with math and calculus tasks;
-    - **`REQUESTS`** - referencing with requests either to database or server and etc.;
-    - **`LOGS`** - changes about logging and other debugging methods;
+    - **`calculus`** - code changes which are working with math and calculus tasks;
+    - **`requests`** - referencing with requests either to database or server and etc.;
+    - **`logs`** - changes about logging and other debugging methods;
 
 - param `<SUMMARY>` is a field used for the providing a succint description of the change:
   - use the imperative, present tense just like in default committing convetions of git;
@@ -62,9 +62,9 @@ Final structure of HEADER param:
 
 Body of a commit message doesn't have any unique syntax, like in default summary - explain the motivation for the change in the commit message body, this commit message should explain why you are making the change.
 
-- use the imperative, present tense just like in default committing convetions of git;
-- don't capitalize first letter just like in the button list;
-- don't enter dot at the end of summary.
+- you CAN start with capitalized letter, this is a description;
+- you can enter dot at the end of summary;
+- you can use imperative and custom grammatics;
 
 You can include comparison of the previous behaviour with new behaviour in order to illustrate the impact of the change.
 
@@ -72,7 +72,11 @@ You can include comparison of the previous behaviour with new behaviour in order
 
 Footer, as the part of a body's message, can contain information about breaking changes and deprecations and is also the place to reference issues, PRs, tickets from other issue tracking products (like Jira) and everything other that this commit closes or is related to.
 
-Breaking change section should start with the phrase of "BREAKING CHANGE: " followed by a short description of what is deprecated, a blank like and a detailed description of the deprecation that also metions the recommended update path.
+- you CAN start with capitalized letter, this is a description;
+- you can enter dot at the end of summary;
+- you can use imperative and custom grammatics;
+
+Breaking change section should start with the phrase of "BREAKING CHANGE: " followed by a short description of what is deprecated, a blank line and a detailed description of the deprecation that also metions the recommended update path.
 
 #### Reverting commits
 
