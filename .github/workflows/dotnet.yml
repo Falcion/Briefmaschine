@@ -20,11 +20,12 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 7.x.x
-    - name: Workflow redirect for project's path
-      run: cd source
     - name: Restore dependencies of project
+      working-directory: ./source
       run: dotnet restore
     - name: Build project with no restore
+      working-directory: ./source
       run: dotnet build --no-restore
     - name: CLI test for project
+      working-directory: ./source
       run: dotnet test --no-build --verbosity normal
