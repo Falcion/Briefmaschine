@@ -34,7 +34,7 @@ jobs:
 
   deploy:
     needs: [ "build" ]
-    if: github.event_name == "create"
+    if: github.event_name == 'create'
     runs-on: ubuntu-latest
 
     permissions:
