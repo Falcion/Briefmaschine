@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: .NET documentation
+    url: https://learn.microsoft.com/en-us/dotnet/
+    about: If your question more about .NET than this project, check this documentation by Microsoft.
