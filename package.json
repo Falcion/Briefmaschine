@@ -1,6 +1,6 @@
 {
   "name": "briefmaschine",
-  "version": "1.0.6",
+  "version": "1.0.0",
   "description": ".NET package about logging audit idea with IO submodule and system of constructing and colouring messages",
   "main": "",
   "directories": {

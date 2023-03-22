@@ -46,7 +46,7 @@ Project was created, inspired and built with this wonderfuls:
 - [.NET 7.0](https://dotnet.microsoft.com/)
 - https://visualstudio.microsoft.com/
 - https://code.visualstudio.com/
-- and inspired by: https://www.javascript.com/
+- sophisticated with: https://github.com/angular/angular/
 
 <p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
 
@@ -61,7 +61,7 @@ Before using this application, ensure you met this requirements:
 
 - Any potentional IDE or text-editor with .NET native support (better if with support of NUGET);
 - Downloaded .NET SDK on your working machine;
-- \* if you desire to contribute to the project, also downloaded [Node.js](https://nodejs.org/) on your machine for integration with commits linting;
+- \* if you desire to contribute to the project, also downloaded [Node.js](https://nodejs.org/) on your machine for integration with commits linting and auto-changelogs;
 
 <p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
 
@@ -72,20 +72,9 @@ Permission is granted for free use in any of your products.
 Guide for installation of source code of the class-library:
 
 1. clone the repository with any form of application that supports GIT;
-2. put this application in your path of project and define its namespace;
-3. class-library is ready to be used in your project or to be edited;
-
-**For editing open-source:**
-
-1. download the repository's git;
-2. initialize linters and HUSKY in git repository;
+2. initialize linterns, NPM and HUSKY for commitlintering;
 3. make your changes via [contributioning policy and commit convention](#contributioning);
-4. continue as instructed in contributioning policy;
-
-    ```powershell
-    npm i
-    npx husky-init
-    ```
+4. work as instructed, class-library is ready to be edited in forked repository;
 
 Instruction about working and setting up automatically linted commits and changelog from them, read - [article about Angular.js conventions](https://mokkapps.de/blog/how-to-automatically-generate-a-helpful-changelog-from-your-git-commit-messages/).
 
@@ -148,7 +137,7 @@ Contributions are what make open source community such an interest place to be i
 
 If you think that you can help this project become better but think its not so important/realizable in the current situtation or for a full contribution, use issues block, otherwise there is a guideline and policy for contributing.
 
-**If you want to contribute to this project, please, read contributioning policy and commit convention:**
+If you want to contribute to this project, please, read contributioning policy and commit convention, this repository works with CLA, [Angular.js commiting convention](https://github.com/angular/angular/blob/main/CONTRIBUTING.md) and works on automated deployment system.
 
 - [Commit convention](./.github/docs/COMMIT_CONVENTION.md);
 - [Contributioning policy](./.github/CONTRIBUTING.md);

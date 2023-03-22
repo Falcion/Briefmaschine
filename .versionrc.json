@@ -1,16 +1,17 @@
 {
     "types": [    
         { "type": "feat", "section": "Features" },    
-        { "type": "build", "hidden": true },    
+        { "type": "build", "section": "Build system" },    
         { "type": "ref", "hidden": true },        
         { "type": "ci", "hidden": true },    
-        { "type": "fix", "section": "Bug Fixes" },    
+        { "type": "fix", "section": "Bug fixes" },    
         { "type": "chore", "hidden": true },    
         { "type": "docs", "hidden": true },    
         { "type": "style", "hidden": true },    
         { "type": "refactor", "section": "Refactoring" },    
         { "type": "perf", "section": "Perfomance" },    
-        { "type": "test", "hidden": true }  
+        { "type": "test", "hidden": true },
+        { "type": "release", "section": "Common" }  
     ],
     "commitUrlFormat": "https://github.com/mokkapps/changelog-generator-demo/commits/{{hash}}",
     "compareUrlFormat": "https://github.com/mokkapps/changelog-generator-demo/compare/{{previousTag}}...{{currentTag}}"
