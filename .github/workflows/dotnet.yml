@@ -5,9 +5,9 @@ name: .NET
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master", "development" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "master", "development" ]
 
 jobs:
   build:
@@ -19,10 +19,12 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0.x
-    - name: Restore dependencies
+        dotnet-version: 7.x.x
+    - name: Workflow redirect for project's path
+      run: cd app
+    - name: Restore dependencies of project
       run: dotnet restore
-    - name: Build
+    - name: Build project with no restore
       run: dotnet build --no-restore
-    - name: Test
+    - name: CLI test for project
       run: dotnet test --no-build --verbosity normal
