@@ -1,0 +1,36 @@
+- name: Blocked
+  color: 'B60205'
+- name: Abandoned
+  color: '000000'
+- name: API
+  color: 'D93F0B'
+- name: Audit
+  color: '1D76DB'
+- name: Compatibility
+  color: 'BFD4F2'
+- name: Crashing
+  color: 'CCC9D0'
+- name: Documentation
+  color: '1D76DB'
+- name: Duplicate
+  color: 'FFFFFF'
+- name: Enchancement
+  color: '0052CC'
+- name: Error
+  color: '0052CC'
+- name: Feature request
+  color: 'FBCA04'
+- name: Graphics
+  color: 'BFD4F2'
+- name: High severity
+  color: 'E99695'
+- name: Low severity
+  color: 'C2E0C6'
+- name: Massive problem
+  color: 'B60205'
+- name: Medium severity
+  color: 'FEF2C0'
+- name: Question
+  color: 'D4C5F9'
+- name: Stale
+  color: 'CCC9D0'
