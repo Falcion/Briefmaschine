@@ -1,27 +1,27 @@
 ﻿namespace Briefmaschine.Objects
 {
-    ///  <summary>
+    /// <summary>
     /// Enum which represents different types of logging methods
     /// </summary>
     public enum Entries
     {
-        ///  <summary>
+        /// <summary>
         /// Default enum value for white-colored information entries
         /// </summary>
         INFO,
-        ///  <summary>
+        /// <summary>
         /// Default enum value for yellow-colored warning entries
         /// </summary>
         WARN,
-        ///  <summary>
+        /// <summary>
         /// Default enum value for red-colored error entries
         /// </summary>
         ERROR1,
-        ///  <summary>
+        /// <summary>
         /// Default enum value for red-colored error entries
         /// </summary>
         ERROR2,
-        ///  <summary>
+        /// <summary>
         /// Default enum value for green-colored success entries
         /// </summary>
         SUCCESS,

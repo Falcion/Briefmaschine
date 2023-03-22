@@ -5,39 +5,39 @@ using Briefmaschine.Coroutines;
 
 namespace Briefmaschine
 {
-    ///  <summary>
+    /// <summary>
     /// Class containing basic constructors for instances of logger and its static methods
     /// </summary>
     public sealed class Logger
     {
-        ///  <summary>
+        /// <summary>
         /// Private string representing name of current logger's instace
         /// </summary>
         private readonly string? name;
-        ///  <summary>
+        /// <summary>
         /// Private string representing ID of current logger's instance
         /// </summary>
         private readonly string? id;
 
-        ///  <summary>
+        /// <summary>
         /// Static reference to instance of an logger's engine
         /// </summary>
         private static readonly Logger? instance = new Logger();
 
-        ///  <summary>
+        /// <summary>
         /// An const integer value representing frames count for stackfrace in instance of logging methods
         /// </summary>
         private const int STACKFRAMES = 2;
 
-        ///  <summary>
+        /// <summary>
         /// Nullable instance constructor for logger's engine
         /// </summary>
         public Logger(){}
 
-        ///  <summary>
+        /// <summary>
         /// Instance constructor of logger's engine
         /// </summary>
-        ///  <param name="name">
+        /// <param name="name">
         /// String representing the name of constructed instance
         /// </param>
         public Logger(string name)
@@ -45,13 +45,13 @@ namespace Briefmaschine
             this.name = name;
         }
 
-        ///  <summary>
+        /// <summary>
         /// Instance constructor of logger's engine
         /// </summary>
-        ///  <param name="name">
+        /// <param name="name">
         /// String representing the name of constructed instance
         /// </param>
-        ///  <param name="id">
+        /// <param name="id">
         /// String representing the ID of constructed instance
         /// </param>
         public Logger(string name, string id) : this(name)
@@ -59,16 +59,16 @@ namespace Briefmaschine
             this.id = id;
         }
 
-        ///  <summary>
+        /// <summary>
         /// Static method for displaying your entry within white color in console
         /// </summary>
-        ///  <param name="message">
+        /// <param name="message">
         /// String representing contents of future log's entry
         /// </param>
-        ///  <param name="code_pos">
+        /// <param name="code_pos">
         /// String representing which section of the program log's entry belongs
         /// </param>
-        ///  <param name="is_io">
+        /// <param name="is_io">
         /// Boolean parameter representing will this entry be written in file
         /// </param>
         public static void Info(string message, string code_pos = "DEFAULT", bool is_io = false)
@@ -83,13 +83,13 @@ namespace Briefmaschine
         /// <summary>
         /// Static method for displaying your entry within yellow color in console
         /// </summary>
-        ///  <param name="message">
+        /// <param name="message">
         /// String representing contents of future log's entry
         /// </param>
-        ///  <param name="code_pos">
+        /// <param name="code_pos">
         /// String representing which section of the program log's entry belongs
         /// </param>
-        ///  <param name="is_io">
+        /// <param name="is_io">
         /// Boolean parameter representing will this entry be written in file
         /// </param>
         public static void Warn(string message, string code_pos = "DEFAULT", bool is_io = false)
@@ -104,13 +104,13 @@ namespace Briefmaschine
         /// <summary>
         /// Static method for displaying your entry within green color in console
         /// </summary>
-        ///  <param name="message">
+        /// <param name="message">
         /// String representing contents of future log's entry
         /// </param>
-        ///  <param name="code_pos">
+        /// <param name="code_pos">
         /// String representing which section of the program log's entry belongs
         /// </param>
-        ///  <param name="is_io">
+        /// <param name="is_io">
         /// Boolean parameter representing will this entry be written in file
         /// </param>
         public static void Success(string message, string code_pos = "DEFAULT", bool is_io = false)
@@ -125,13 +125,13 @@ namespace Briefmaschine
         /// <summary>
         /// Static method for displaying your entry within red color in console
         /// </summary>
-        ///  <param name="message">
+        /// <param name="message">
         /// String representing contents of future log's entry
         /// </param>
-        ///  <param name="code_pos">
+        /// <param name="code_pos">
         /// String representing which section of the program log's entry belongs
         /// </param>
-        ///  <param name="is_io">
+        /// <param name="is_io">
         /// Boolean parameter representing will this entry be written in file
         /// </param>
         public static void Error(string message, string code_pos = "DEFAULT", bool is_io = false)
@@ -143,16 +143,16 @@ namespace Briefmaschine
             Reconstructor(raw_message, is_io, Entries.ERROR1);
         }
 
-        ///  <summary>
+        /// <summary>
         /// Private method of reconstructing and deploying entries of logger's methods
         /// </summary>
-        ///  <param name="entry">
+        /// <param name="entry">
         /// String representing preprocessed log's entry out of method
         /// </param>
-        ///  <param name="is_io">
+        /// <param name="is_io">
         /// Boolean parameter representing will this entry be written in file
         /// </param>
-        ///  <param name="entry_type">
+        /// <param name="entry_type">
         /// Enum representing type of logging method
         /// </param>
         private static void Reconstructor(string entry, bool is_io = false, Entries entry_type = Entries.INFO)
@@ -231,25 +231,25 @@ namespace Briefmaschine
             }
         }
 
-        ///  <summary>
+        /// <summary>
         /// Custom method to display fully-customized log's entry
         /// </summary>
-        ///  <param name = "message" >
+        /// <param name = "message" >
         /// String representing contents of future log's entry
         /// </param>
-        ///  <param name="code_pos">
+        /// <param name="code_pos">
         /// String representing which section of the program log's entry belongs
         /// </param>
-        ///  <param name="custom_type">
+        /// <param name="custom_type">
         /// String representing type of logging methods alike of given perspective of instance
         /// </param>
-        ///  <param name="colors">
+        /// <param name="colors">
         /// Pair parameter of console colors representing foreground color as first of the pair and background as second of the pair
         /// </param>
-        ///  <param name="is_io">
+        /// <param name="is_io">
         /// Boolean parameter representing will this entry be written in file
         /// </param>
-        ///  <param name="path">
+        /// <param name="path">
         /// String representing fullpath to future IO file of logs which in case of nullable, method replaces with ENV value
         /// </param>
         public static void Custom(string message, string? code_pos, string? custom_type, Pair<ConsoleColor>? colors, bool? is_io = false, string? path = null)
@@ -260,8 +260,8 @@ namespace Briefmaschine
 
             string? method_target = string.Empty;
 
-            /* Here, we don't use "??=" operator for better readability:
-             * current parameter is just like in stairs, has it's height
+            /*  Here, we don't use "??=" operator for better readability:
+                current parameter is just like in stairs, has it's height
              */
 
             if (stackframe != null)
@@ -328,16 +328,16 @@ namespace Briefmaschine
 
         }
 
-        ///  <summary>
+        /// <summary>
         /// String representing name of current logger's instace
         /// </summary>
         public string? Name { get { return name; } }
-        ///  <summary>
+        /// <summary>
         /// String representing ID of current logger's instace
         /// </summary>
         public string? ID { get { return id; } }
 
-        ///  <summary>
+        /// <summary>
         /// Static reference to instance of an logger's engine
         /// </summary>
         public Logger? Instance { get { return instance; } }

@@ -1,34 +1,34 @@
 ﻿namespace Briefmaschine.Objects
 {
-    ///  <summary>
+    /// <summary>
     /// Object representing a pair of generic type parameters
     /// </summary>
-    ///  <typeparam name="T">
+    /// <typeparam name="T">
     /// Generic type-parameter representing type of pair's values
     /// </typeparam>
     public class Pair<T>
     {
-        ///  <summary>
+        /// <summary>
         /// Generic value representing first parameter of the pair
         /// </summary>
         public T? P1 { get; set; }
-        ///  <summary>
+        /// <summary>
         /// Generic value representing second parameter of the pair
         /// </summary>
         public T? P2 { get; set; }
 
-        ///  <summary>
+        /// <summary>
         /// Nullable instance constructor for pairs
         /// </summary>
         public Pair(){}
 
-        ///  <summary>
+        /// <summary>
         /// Instance constructor for pairs
         /// </summary>
-        ///  <param name="P1">
+        /// <param name="P1">
         /// Generic representing first parameter of the pair's instance
         /// </param>
-        ///  <param name="P2">
+        /// <param name="P2">
         /// Generic representing second parameter of the pair's instance
         /// </param>
         public Pair(T P1, T P2)

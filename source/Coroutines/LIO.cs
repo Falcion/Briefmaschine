@@ -3,27 +3,27 @@
 namespace Briefmaschine.Coroutines
 {
 #pragma warning disable S101
-    ///  <summary>
+    /// <summary>
     /// Internal class containing IO methods for logger's static methods
     /// </summary>
     internal static class LIO
 #pragma warning restore S101
     {
-        ///  <summary>
+        /// <summary>
         /// Const string representing default common message for exceptions in IO methods
         /// </summary>
         private const string PATH_EXCEPTION_MESSAGE = "Parsing process got nullable result via trying to serialize path's variable of update method exception was made.";
 
-        ///  <summary>
+        /// <summary>
         /// Method working with basic IO and preparing it's instance for logger
         /// </summary>
-        ///  <param name="dest">
+        /// <param name="dest">
         /// String representing folder's name for IO instance of logger
         /// </param>
-        /// <param name="file">
+        ///<param name="file">
         /// String representing filename for IO instance of logger
         /// </param>
-        ///  <param name="is_process">
+        /// <param name="is_process">
         /// Boolean parameter representing will given path be written into environment variable
         /// </param>
         internal static void EnsureIO(string dest = ".audit", string file = "", bool is_process = true)
@@ -52,13 +52,13 @@ namespace Briefmaschine.Coroutines
                 Environment.SetEnvironmentVariable("LOGS_PATH", path);
         }
 
-        ///  <summary>
+        /// <summary>
         /// Method updating and appending message into existing IO instance of logger
         /// </summary>
-        ///  <param name="message">
+        /// <param name="message">
         /// String representing message which will be appended into IO instance
         /// </param>
-        ///  <param name="path">
+        /// <param name="path">
         /// String representing fullpath to future IO file of logs which in case of nullable, method replaces with ENV value
         /// </param>
         /// <exception cref="ArgumentNullException">
