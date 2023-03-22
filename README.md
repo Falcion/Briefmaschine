@@ -11,7 +11,7 @@
 
 <br/>
 <div align="center">
-    <img src="./.github/images/icon.png" alt="icon" width="160" height="160"/>
+    <img src="./.github/images/icon.svg" alt="icon" width="300" height="300"/>
     <h3>Briefmaschine</h3>
     <p>Deliver your message in colours and bytes.
     <br/>
