@@ -46,12 +46,13 @@ jobs:
       - uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '7.0.x'
-          source-url: https://nuget.pkg.github.com/<owner>/index.json
+          source-url: https://nuget.pkg.github.com/Falcion/index.json
         env:
-          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      - run: dotnet build --configuration Release <my project>
+          NUGET_AUTH_TOKEN: ${{secrets.NUGET_AUTH_TOKEN}}
+      - run: dotnet build --configuration Release
       - name: Create the package
-        run: dotnet pack --configuration Release <my project>
+        run: dotnet pack --configuration Release
+        working-directory: ./source
       - name: Publish the package to GPR
-        run: dotnet nuget push <my project>/bin/Release/*.nupkg
-
+        run: dotnet nuget push bin/Release/*.nupkg
+        working-directory: ./source
