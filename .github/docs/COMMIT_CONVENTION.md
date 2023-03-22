@@ -1,3 +1,5 @@
+- inspired by [Angular.js](https://github.com/angular/angular) commiting and contributioning conventions: for more, visit their repository and see the infrastructure itself.
+
 Comitting conventions
 ---------------------
 
@@ -26,6 +28,8 @@ And there is some advanced explanation for each param in commit's message struct
 
 #### Commit message - header
 
+Header is just an HTML header of a commit, not its description or something else, this is what other contributors first see about a commit.
+
 Construction of header of commit's message is a joint of multiple params which defines entire commit preposition:
 
 ```html
@@ -43,8 +47,11 @@ Final structure of HEADER param:
   - **`REF`** - referencing something entirely new based on old changes (in case of full rework of a repository);
   - **`FIX`** - code changes defining fix of a bugs, crashes and some misimprovements (fast-deploy cases);
 
-- param `<SCOPE>` should be a name of the package affected or a code block (as perceived by the person reading changelog generated from the commit messages);
+- param `<SCOPE>` should be a name of the package affected or a code block (as perceived by the person reading changelog generated from the commit messages) - names below are given for an example:
     > None or empty strings which useful for a test or a refactor changes that are done across all packages;
+    - **`CALCULUS`** - code changes which are working with math and calculus tasks;
+    - **`REQUESTS`** - referencing with requests either to database or server and etc.;
+    - **`LOGS`** - changes about logging and other debugging methods;
 
 - param `<SUMMARY>` is a field used for the providing a succint description of the change:
   - use the imperative, present tense just like in default committing convetions of git;
@@ -52,6 +59,34 @@ Final structure of HEADER param:
   - don't enter dot at the end of summary.
 
 #### Commit message - body
+
+Body of a commit message doesn't have any unique syntax, like in default summary - explain the motivation for the change in the commit message body, this commit message should explain why you are making the change.
+
+- use the imperative, present tense just like in default committing convetions of git;
+- don't capitalize first letter just like in the button list;
+- don't enter dot at the end of summary.
+
+You can include comparison of the previous behaviour with new behaviour in order to illustrate the impact of the change.
+
+#### Commit message - footer
+
+Footer, as the part of a body's message, can contain information about breaking changes and deprecations and is also the place to reference issues, PRs, tickets from other issue tracking products (like Jira) and everything other that this commit closes or is related to.
+
+Breaking change section should start with the phrase of "BREAKING CHANGE: " followed by a short description of what is deprecated, a blank like and a detailed description of the deprecation that also metions the recommended update path.
+
+#### Reverting commits
+
+If this commit reverts a previous commit, it should begin with "REVERT: " keyword followed by the header of the reverted commit.
+
+Content of the commit message body should contain:
+
+- information about the SHA of the commit being reverted in the following format:
+
+    ```powershell
+    Change reverts commit [SHA]
+    ```
+- a clear description of the reason for reverting the commit message;
+
 
 Signing the CLA
 ---------------
