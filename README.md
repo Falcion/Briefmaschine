@@ -1,3 +1,13 @@
+<div align="center">
+    <a href="https://github.com/Falcion/Briefmaschine/actions/workflows/codeql.yml"><img src="https://github.com/Falcion/Briefmaschine/actions/workflows/codeql.yml/badge.svg" alt="codeql"/></a>
+    <a href="https://github.com/Falcion/Briefmaschine/actions/workflows/dotnet.yml"><img src="https://github.com/Falcion/Briefmaschine/actions/workflows/dotnet.yml/badge.svg" alt="dotnet"/></a>
+    <a href="https://github.com/Falcion/Briefmaschine/graphs/contributors"><img src="https://img.shields.io/github/contributors/Falcion/Briefmaschine" alt="contributors"/></a>
+    <a href="https://github.com/Falcion/Briefmaschine/stargazers"><img src="https://img.shields.io/github/stars/Falcion/Briefmaschine" alt="stargazers"/></a>
+    <a href="https://github.com/Falcion/Briefmaschine/forks"><img src="https://img.shields.io/github/forks/Falcion/Briefmaschine" alt="forks"/></a>
+    <a href="https://github.com/Falcion/Briefmaschine/issues"><img src="https://img.shields.io/github/issues/Falcion/Briefmaschine" alt="issues"/></a>
+    <a href="https://github.com/Falcion/Briefmaschine/commits"><img src="https://img.shields.io/github/last-commit/Falcion/Briefmaschine" alt="commit-activity"/></a>
+    <a href="https://www.nuget.org/packages/Briefmaschine"><img src="https://img.shields.io/nuget/dt/Briefmaschine" alt="downloads"/></a>
+</div>
 
 <br/>
 <div align="center">
