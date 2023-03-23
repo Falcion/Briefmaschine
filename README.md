@@ -1,7 +1,17 @@
+<div align="center">
+    <a href="https://github.com/Falcion/Briefmaschine/actions/workflows/codeql.yml"><img src="https://github.com/Falcion/Briefmaschine/actions/workflows/codeql.yml/badge.svg" alt="codeql"/></a>
+    <a href="https://github.com/Falcion/Briefmaschine/actions/workflows/dotnet.yml"><img src="https://github.com/Falcion/Briefmaschine/actions/workflows/dotnet.yml/badge.svg" alt="dotnet"/></a>
+    <a href="https://github.com/Falcion/Briefmaschine/graphs/contributors"><img src="https://img.shields.io/github/contributors/Falcion/Briefmaschine" alt="contributors"/></a>
+    <a href="https://github.com/Falcion/Briefmaschine/stargazers"><img src="https://img.shields.io/github/stars/Falcion/Briefmaschine" alt="stargazers"/></a>
+    <a href="https://github.com/Falcion/Briefmaschine/forks"><img src="https://img.shields.io/github/forks/Falcion/Briefmaschine" alt="forks"/></a>
+    <a href="https://github.com/Falcion/Briefmaschine/issues"><img src="https://img.shields.io/github/issues/Falcion/Briefmaschine" alt="issues"/></a>
+    <a href="https://github.com/Falcion/Briefmaschine/commits"><img src="https://img.shields.io/github/last-commit/Falcion/Briefmaschine" alt="commit-activity"/></a>
+    <a href="https://www.nuget.org/packages/Briefmaschine"><img src="https://img.shields.io/nuget/dt/Briefmaschine" alt="downloads"/></a>
+</div>
 
 <br/>
 <div align="center">
-    <img src="./.github/images/projicon.png" alt="icon" width="160" height="160"/>
+    <img src="./.github/images/icon.svg" alt="icon" width="300" height="300"/>
     <h3>Briefmaschine</h3>
     <p>Deliver your message in colours and bytes.
     <br/>
@@ -36,7 +46,7 @@ Project was created, inspired and built with this wonderfuls:
 - [.NET 7.0](https://dotnet.microsoft.com/)
 - https://visualstudio.microsoft.com/
 - https://code.visualstudio.com/
-- and inspired by: https://www.javascript.com/
+- sophisticated with: https://github.com/angular/angular/
 
 <p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
 
@@ -51,6 +61,7 @@ Before using this application, ensure you met this requirements:
 
 - Any potentional IDE or text-editor with .NET native support (better if with support of NUGET);
 - Downloaded .NET SDK on your working machine;
+- \* if you desire to contribute to the project, also downloaded [Node.js](https://nodejs.org/) on your machine for integration with commits linting and auto-changelogs;
 
 <p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
 
@@ -60,16 +71,19 @@ Permission is granted for free use in any of your products.
 
 Guide for installation of source code of the class-library:
 
-1. Clone the repository with any form of application that supports GIT;
-2. Put this application in your path of project and define its namespace;
-3. Class-library is ready to be used in your project or to be edited;
+1. clone the repository with any form of application that supports GIT;
+2. initialize linterns, NPM and HUSKY for commitlintering;
+3. make your changes via [contributioning policy and commit convention](#contributioning);
+4. work as instructed, class-library is ready to be edited in forked repository;
+
+Instruction about working and setting up automatically linted commits and changelog from them, read - [article about Angular.js conventions](https://mokkapps.de/blog/how-to-automatically-generate-a-helpful-changelog-from-your-git-commit-messages/).
 
 Process of installation within NUGET package manager in VS:
 
-1. Open project in IDE with .NET native-support;
-2. Use the specified package manager in your IDE (in VS - find this in upper hotbar);
-3. Write the name of this package into packages browser;
-4. Download the required for you version through the menu and package is ready-to-use.
+1. open project in IDE with .NET native-support;
+2. use the specified package manager in your IDE (in VS - find this in upper hotbar);
+3. write the name of this package into packages browser;
+4. download the required for you version through the menu and package is ready-to-use.
 
 If you use a different IDE without native support for NUGET, read this article: [using new commands in .NET]( https://stackoverflow.com/questions/40675162/install-a-nuget-package-in-visual-studio-code/).
 
@@ -101,9 +115,9 @@ Roadmap
 - [x] Refactor the common documentation of project;
 - [x] Refactor the main functionality-code of the package;
 - [x] Implement XML-documentation into the package's code;
-- [ ] Write an infrastructure in the repository;
-- [ ] Design and publish first completed changelog;
-- [ ] Publish package on NUGET.
+- [x] Write an infrastructure in the repository;
+- [x] Design and publish first completed changelog;
+- [x] Publish package on NUGET.
 
 <p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
 
@@ -123,16 +137,12 @@ Contributions are what make open source community such an interest place to be i
 
 If you think that you can help this project become better but think its not so important/realizable in the current situtation or for a full contribution, use issues block, otherwise there is a guideline and policy for contributing.
 
-If you have a suggestion that will improve this project: fork the repository and create a pull request:
+If you want to contribute to this project, please, read contributioning policy and commit convention, this repository works with CLA, [Angular.js commiting convention](https://github.com/angular/angular/blob/main/CONTRIBUTING.md) and works on automated deployment system.
 
-1. Fork the repository;
-2. Clone the repository with help of any git's client;
-3. Make your changes;
-4. Stage made changes and push them - [step-by-step guide](https://dev.to/mrfrontend/git-101--step-2-add-stage-commit--push-3p3p) is attached;
-5. Create a pull request;
-6. Squash commits for cleaner history.
+- [Commit convention](./.github/docs/COMMIT_CONVENTION.md);
+- [Contributioning policy](./.github/CONTRIBUTING.md);
 
-For one-single file contributioning, use a more quicker way without forking the repository through website.
+**For one-single file contributioning, use a more quicker way without forking the repository through website.**
 
 More about it in this article: in [official GIT docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork/) about syncing one-file fork.
 
