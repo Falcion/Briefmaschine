@@ -15,30 +15,22 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-dotnet@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '7.0.x'
-        source-url: https://nuget.pkg.github.com/Falcion/index.json
-      env:
-        NUGET_AUTH_TOKEN: ${{secrets.NUGET_AUTH_TOKEN}}
-    - name: CLI test for project
-      working-directory: ./source
-      run: dotnet test --no-build --verbosity normal
+        dotnet-version: 7.x.x
     - name: Restore dependencies of project
       working-directory: ./source
       run: dotnet restore
-    - run: dotnet build --configuration Release
-    - name: Create the package
-      run: dotnet pack --configuration Release
+    - name: Build project with no restore
       working-directory: ./source
-    - name: Publish the package to GPR
-      run: dotnet nuget push bin/Release/*.nupkg
+      run: dotnet build --no-restore
+    - name: CLI test for project
       working-directory: ./source
-    
+      run: dotnet test --no-build --verbosity normal
 
   deploy:
     needs: [ "build" ]
-    if: github.event_name == 'create'
     runs-on: ubuntu-latest
 
     permissions:
@@ -54,6 +46,7 @@ jobs:
         env:
           NUGET_AUTH_TOKEN: ${{secrets.NUGET_AUTH_TOKEN}}
       - run: dotnet build --configuration Release
+        working-directory: ./source
       - name: Create the package
         run: dotnet pack --configuration Release
         working-directory: ./source
