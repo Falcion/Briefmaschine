@@ -1,12 +1,10 @@
-<br />
+Millions of developers across the world host millions of projects both open and closed source on, we're fortunate to be able to play a part in enabling collaboration across the developer community every day, which is a responsibility we don’t take lightly, because together, we all have the exciting opportunity to make this a community we can be proud of.
 
-- [Preamble](#preamble)
-- [Commitment](#commitment)
-- [Behaviour](#behaviour)
-- [Enforcement](#enforcement)
-- [Attribution](#attribution)
+Community, powered by discussions, is intended to be a place for further collaboration, support, and brainstorming, this is a civilized place for connecting with other users, learning new skills, sharing feedback and ideas, and finding all the support you need for your projects, by participating in this community, you are agreeing to the same TOS (or terms of service) that apply to, as well as this GITHUB community-specific code of conduct.
 
-<!-- Inspired by .NET Foundation contributor covenant -->
+With this code of conduct, we hope to help you understand how best to collaborate in community, what you can expect from moderators, and what type of actions or content may result in temporary or permanent suspension from community participation, we will investigate any abuse reports and may moderate public content within community that we determine to be in violation.
+
+Our diverse user base brings different perspectives, ideas, and experiences, and ranges from people who created their first project last week to the most well-known software developers in the world: we are committed to making an environment that welcomes all the different voices and perspectives our community has to offer, while maintaining a safe place for developers to do their best work.
 
 ### Preamble
 
@@ -22,16 +20,52 @@ As members, contributors, and leaders pledge to make participation in this commu
 
 Project pledges to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
 
-<br />
-<p align="right"><a href="#top" title="Back to the top">[^]</a></p>
-
 ### Behaviour
 
 Examples of behaviour that contributes to creating a positive environment include:
 
-- Using welcoming and inclusive language.
-- Being respectful of differing viewpoints and experiences.
-- Gracefully accepting constructive criticism.
+- Engage with consideration and respect.
+
+  - **Be welcoming and open-minded.**\
+    New users join our community each day, some are well-established developers, while others are just beginning: be open to other ideas and experience levels, make room for opinions other than your own and be welcoming to new collaborators and those just getting started.
+
+  - **Be respectful.**\
+    Working in a collaborative environment means disagreements may happen, but remember to criticize ideas, not people, share thoughtful, constructive criticism and be courteous to those you interact with - if you’re unable to engage respectfully, consider taking a step back or using some of our moderation tools to deescalate a tense situation.
+
+  - **Be empathetic.**\
+    Github is a global community with people from a wide variety of backgrounds and perspectives, many of which may not be your own: try to put yourself in others shoes and understand their feelings before you address them, do your best to help make this community where others feel safe to make contributions, participate in discussions, and share different ideas.
+
+- Contribute in a positive and constructive way.
+
+  - **Improve the discussion.**\
+    Help us make this a great place for discussion by always working to improve the discussion in some way, however small: if you are not sure your post adds to the conversation, think over what you want to say and try again later.
+
+    The topics discussed here matter to us, and we want you to act as if they matter to you, too: be respectful of the topics and the people discussing them, even if you disagree with some of what is being said.
+
+  - **Be clear and stay on topic.**\
+    GitHub community is for collaboration, sharing ideas, and helping each other get stuff done, off-topic comments are a distraction (sometimes welcome, but usually not) from getting work done and being productive: staying on topic helps produce positive and productive discussions.
+
+    Criteria of this applies to sharing links, as well: any links shared in community discussions should be shared with the intent of providing relevant and appropriate information. links should not be posted to simply drive traffic or attention to a site and should always be accompanied by a full explanation of the content and purpose of the link, posting links, especially unsolicited ones, without relevant and valuable context can come across as advertising or serving even more malicious purposes.
+
+  - **Share mindfully.**\
+    When asking others to give you feedback or collaborate on a project, only share valuable and relevant resources to provide context, don't post links that don't add value to the discussion, and don't post unsolicited links to your own projects or sites on other user's threads.
+
+    Additionally, don't share sensitive information, this includes your own email address. We don't allow the sharing of such information in community, as it can create security and privacy risks for the poster, as well as other users. If you'd like to invite other users to collaborate on a project or work with you, share a link to the repository in which the project you are working on exists, you can also add others as outside collaborators on your project repo to give them special permissions to help you develop your project.
+
+  - **Keep it tidy.**\
+    Make the effort to put things in the right place, so that we can spend more time discussing and less time cleaning up.
+
+    - **DON'T** start a discussion in the wrong category.
+    - **DON'T** cross-post the same thing in multiple discussions.
+    - **DON'T** post no-content replies.
+    - **DON'T** bump posts, unless you have new and relevant information to share.
+    - **DON'T** divert a discussion by changing it midstream.
+    - **DON'T** post supportives, instead, use the upvote button, rather than taking an existing discussion in a radically different direction, open a new discussion.
+
+- Be trustworthy.
+
+  - **Always be honest.**\
+    Don’t knowingly share incorrect information or intentionally mislead other сommunity participants - шf you don’t know the answer to someone’s question but still want to help, you can try helping them research or find resources instead, moderators and higher contributors will also be active in community, so if you’re unsure of an answer, it’s likely a moderators will be able to help.
 
 Examples of unacceptable behaviour by participants include:
 
@@ -46,14 +80,9 @@ Examples of unacceptable behaviour by participants include:
 - Attacking personal tastes.
 - Other conduct which you know could reasonably be considered inappropriate in a professional setting.
 
-<br />
-<p align="right"><a href="#top" title="Back to the top">[^]</a></p>
-
 ### Enforcement
 
 Violations of the code of conduct may be reported by sending to written in README e-mail or creating an issue, discussions:
-
-<!-- Referencing developer contact information again in CODE_OF_CONDUCT -->
 
 - <a href= "mailto: io.falcion@outlook.com">Outlook E-mail</a>
 
@@ -65,9 +94,6 @@ Any report will be reviewed and investigated and will result in a response that 
 
 Project hold the right and responsibility to remove comments or other contributions that are not aligned to this contributor covenant, or to ban temporarily or permanently any members for other behaviours that they deem inappropriate, threatening, offensive, or harmful.
 
-<br />
-<p align="right"><a href="#top" title="Back to the top">[^]</a></p>
-
 ### Attribution
 
 For answers to common questions about this code of conduct, see the FAQ at link with specified article and as for the translations: they are avalaible at also specified article-link.
@@ -78,6 +104,3 @@ For answers to common questions about this code of conduct, see the FAQ at link 
 Code of conduct is adapted from «Contributor Covenant» of version «2.0»:
 
 - https://www.contributor-covenant.org/version/2/0/code_of_conduct.html
-
-<br />
-<p align="right"><a href="#top" title="Back to the top">[^]</a></p>
