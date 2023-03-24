@@ -1,4 +1,4 @@
-﻿namespace Briefmaschine.Objects
+﻿namespace Briefmaschine.Objects.Tupples
 {
     /// <summary>
     /// Object representing a pair of generic type parameters
