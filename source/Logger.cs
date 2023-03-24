@@ -1,5 +1,6 @@
 ﻿using Briefmaschine.Coroutines;
 using Briefmaschine.Objects;
+using Briefmaschine.Objects.Tupples;
 using System.Diagnostics;
 
 namespace Briefmaschine
@@ -9,6 +10,11 @@ namespace Briefmaschine
     /// </summary>
     public class Logger
     {
+        /// <summary>
+        /// Const string representing default common message for exceptions in constructors for logger's instance
+        /// </summary>
+        private const string PREDEFINED_ID_EXCEPTION = "Can't create an instance of logger with already existing in ENV ID! Please, define nullable ID in logger's constructor or use other ID!";
+
         /// <summary>
         /// Private string representing name of current logger's instace
         /// </summary>
@@ -53,9 +59,26 @@ namespace Briefmaschine
         /// <param name="id">
         /// String representing the ID of constructed instance
         /// </param>
+        /// <exception cref="ArgumentNullException">
+        /// Exception representing a situation, when constructor can't define logger with given ID because one already exists in 
+        /// </exception>
         public Logger(string name, string id) : this(name)
         {
             this.id = id;
+
+            if (id != null)
+            {
+                string? ENV_ID = Environment.GetEnvironmentVariable("ID");
+
+                if (ENV_ID == null)
+                    throw new ArgumentNullException(nameof(id), PREDEFINED_ID_EXCEPTION);
+                if (ENV_ID == $"{id}_ENV")
+#pragma warning disable S3928
+                    throw new ArgumentException(PREDEFINED_ID_EXCEPTION, nameof(id) + "+" + nameof(ENV_ID));
+#pragma warning restore S3928 
+
+                Environment.SetEnvironmentVariable("ID", $"{id}_ENV");
+            }
         }
 
         /// <summary>
