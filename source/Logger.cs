@@ -8,7 +8,7 @@ namespace Briefmaschine
     /// <summary>
     /// Class containing basic constructors for instances of logger and its static methods
     /// </summary>
-    public sealed class Logger
+    public class Logger
     {
         /// <summary>
         /// Private string representing name of current logger's instace
