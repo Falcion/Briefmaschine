@@ -6,7 +6,7 @@ namespace Briefmaschine.Coroutines
     /// <summary>
     /// Internal class containing IO methods for logger's static methods
     /// </summary>
-    internal static class LIO
+    public static class LIO
 #pragma warning restore S101
     {
         /// <summary>
@@ -26,7 +26,7 @@ namespace Briefmaschine.Coroutines
         /// <param name="is_process">
         /// Boolean parameter representing will given path be written into environment variable
         /// </param>
-        internal static void EnsureIO(string dest = ".audit", string file = "", bool is_process = true)
+        public static void EnsureIO(string dest = ".audit", string file = "", bool is_process = true)
         {
             if (dest == string.Empty)
                 dest = ".audit";
@@ -64,7 +64,7 @@ namespace Briefmaschine.Coroutines
         /// <exception cref="ArgumentNullException">
         /// Exception representing a situation, when method can't create any form of path to IO instance from given parameter
         /// </exception>
-        internal static void InjectIO(string message, string? path)
+        public static void InjectIO(string message, string? path)
         {
             if(path != null)
             {
