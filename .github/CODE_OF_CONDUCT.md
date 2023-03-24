@@ -22,7 +22,9 @@ Project pledges to act and interact in ways that contribute to an open, welcomin
 
 ### Behaviour
 
-Examples of behaviour that contributes to creating a positive environment include:
+Primary purpose of the this community is to collaborate on software projects: we are committed to maintaining a community where users are free to express themselves and challenge one another's ideas, both technical and otherwise at the same time, it's important that users remain respectful and allow space for others to contribute openly. 
+
+In order to foster both a safe and productive environment, we encourage our community members to look to these guidelines to inform how they interact on our platform - below, you’ll find some suggestions for how to have successful interactions as a valued member of the community:
 
 - Engage with consideration and respect.
 
@@ -67,7 +69,7 @@ Examples of behaviour that contributes to creating a positive environment includ
   - **Always be honest.**\
     Don’t knowingly share incorrect information or intentionally mislead other сommunity participants - шf you don’t know the answer to someone’s question but still want to help, you can try helping them research or find resources instead, moderators and higher contributors will also be active in community, so if you’re unsure of an answer, it’s likely a moderators will be able to help.
 
-Examples of unacceptable behaviour by participants include:
+Examples of unacceptable behaviour by participants include, which is concatenated in parallel terms with terms of positive attitude of behaviour in previous statements, this are some rules, which you mustn't disobeye for much more healthier community:
 
 - Trolling, insulting/derogatory comments, public or private harassment.
 - Publishing others private information, such as a physical or electronic address, without explicit permission.
@@ -86,9 +88,9 @@ Violations of the code of conduct may be reported by sending to written in READM
 
 - <a href= "mailto: io.falcion@outlook.com">Outlook E-mail</a>
 
-Or see developer's DEV.TO blog:
+In our community, there are a variety of actions that we may take in response to inappropriate behavior or content, it usually depends on the exact circumstances of a particular case: we recognize that sometimes people may say or do inappropriate things for any number of reasons, perhaps, they didn't realize how their words would be perceived or maybe they just let their emotions get the best of them, of course, sometimes, there are folks who just want to spam or cause trouble.
 
-- DEV.TO page of developer: https://dev.to/falcion/
+Each case requires a different approach, and we try to tailor our response to meet the needs of the situation, we'll review each situation on a case-by-case basis: in each case, we will have a diverse team investigate the content and surrounding facts and respond as appropriate, using this code of conduct to guide our decision.
 
 Any report will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances: further details of specific enforcement policies may be posted separately.
 
@@ -101,6 +103,8 @@ For answers to common questions about this code of conduct, see the FAQ at link 
 - https://www.contributor-covenant.org/faq
 - https://www.contributor-covenant.org/translations
 
-Code of conduct is adapted from «Contributor Covenant» of version «2.0»:
+Code of conduct is adapted from:
 
 - https://www.contributor-covenant.org/version/2/0/code_of_conduct.html
+- https://docs.github.com/en/site-policy/github-terms/github-community-code-of-conduct
+- https://dotnetfoundation.org/about/policies/code-of-conduct
