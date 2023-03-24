@@ -1,14 +1,21 @@
-- inspired by [Angular.js](https://github.com/angular/angular) commiting and contributioning conventions: for more, visit their repository and see the infrastructure itself.
+- [Comitting convention](#comitting-convention)
+    - [Commit message - header](#commit-message---header)
+    - [Commit message - body](#commit-message---body)
+    - [Commit message - footer](#commit-message---footer)
+    - [Reverting commits](#reverting-commits)
+- [Signing the CLA](#signing-the-cla)
 
-Comitting conventions
+Conventional commits specification is a lightweight convention on top of commit messages, it provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of - this convention dovetails with , by describing the features, fixes, and breaking changes made in commit messages.
+
+- created with: https://www.conventionalcommits.org/en/v1.0.0/
+
+Comitting convention
 ---------------------
 
 For consistency throughout the source code, keep these rules in mind as you are working with project's open source:
 
 - all features or bug fixes must be tested;
 - all public API methods must be documented;
-
-Inspired by [Azure](https://github.com/MicrosoftDocs/azure-devops/docs) and [Angular.js](https://github.com/angular/angular) project has very precise rules over how GIT commit messages must be formatted - this format leads to easier to read commit history.
 
 Each commit message consists of a header, a body, and a footer:
 
@@ -26,6 +33,8 @@ And there is some advanced explanation for each param in commit's message struct
 - param `<BODY>` is mandatory for every commit except for commits of documentation purpose: when the body is present it must conform to the commit message body formatting;
 - param `<FOOTER>` is optional, the same as others must conform specified formatting;
 
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
+
 #### Commit message - header
 
 Header is just an HTML header of a commit, not its description or something else, this is what other contributors first see about a commit.
@@ -34,7 +43,7 @@ Construction of header of commit's message is a joint of multiple params which d
 
 ```html
 Final structure of HEADER param:
-<TYPE>[<SCOPE>]: <SUMMARY>
+<TYPE>(<SCOPE>): <SUMMARY>
 ```
 
 - param `<TYPE>` is defined by a range of categories, there is a list of them:\
@@ -58,6 +67,8 @@ Final structure of HEADER param:
   - don't capitalize first letter just like in the button list;
   - don't enter dot at the end of summary.
 
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
+
 #### Commit message - body
 
 Body of a commit message doesn't have any unique syntax, like in default summary - explain the motivation for the change in the commit message body, this commit message should explain why you are making the change.
@@ -68,6 +79,8 @@ Body of a commit message doesn't have any unique syntax, like in default summary
 
 You can include comparison of the previous behaviour with new behaviour in order to illustrate the impact of the change.
 
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
+
 #### Commit message - footer
 
 Footer, as the part of a body's message, can contain information about breaking changes and deprecations and is also the place to reference issues, PRs, tickets from other issue tracking products (like Jira) and everything other that this commit closes or is related to.
@@ -77,6 +90,8 @@ Footer, as the part of a body's message, can contain information about breaking 
 - you can use imperative and custom grammatics;
 
 Breaking change section should start with the phrase of "BREAKING CHANGE: " followed by a short description of what is deprecated, a blank line and a detailed description of the deprecation that also metions the recommended update path.
+
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
 
 #### Reverting commits
 
@@ -91,9 +106,12 @@ Content of the commit message body should contain:
     ```
 - a clear description of the reason for reverting the commit message;
 
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
 
 Signing the CLA
 ---------------
+
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
 
 Sometimes you can be asked to sign the CLA (or contributor license agreement) before sending the PR: for any code changes to be accepted, the CLA must be signed - its a quick and easy process.
 

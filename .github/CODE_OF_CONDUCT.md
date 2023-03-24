@@ -1,3 +1,11 @@
+- [Preamble](#preamble)
+- [Commitment](#commitment)
+- [Behaviour](#behaviour)
+  - [Positive behaviour](#positive-behaviour)
+  - [Negative behaviour](#negative-behaviour)
+- [Enforcement](#enforcement)
+- [Attribution](#attribution)
+
 Millions of developers across the world host millions of projects both open and closed source on, we're fortunate to be able to play a part in enabling collaboration across the developer community every day, which is a responsibility we don’t take lightly, because together, we all have the exciting opportunity to make this a community we can be proud of.
 
 Community, powered by discussions, is intended to be a place for further collaboration, support, and brainstorming, this is a civilized place for connecting with other users, learning new skills, sharing feedback and ideas, and finding all the support you need for your projects, by participating in this community, you are agreeing to the same TOS (or terms of service) that apply to, as well as this GITHUB community-specific code of conduct.
@@ -20,9 +28,15 @@ As members, contributors, and leaders pledge to make participation in this commu
 
 Project pledges to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
 
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
+
 ### Behaviour
 
-Primary purpose of the this community is to collaborate on software projects: we are committed to maintaining a community where users are free to express themselves and challenge one another's ideas, both technical and otherwise at the same time, it's important that users remain respectful and allow space for others to contribute openly. 
+Primary purpose of the this community is to collaborate on software projects: we are committed to maintaining a community where users are free to express themselves and challenge one another's ideas, both technical and otherwise at the same time, it's important that users remain respectful and allow space for others to contribute openly.
+
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
+
+#### Positive behaviour
 
 In order to foster both a safe and productive environment, we encourage our community members to look to these guidelines to inform how they interact on our platform - below, you’ll find some suggestions for how to have successful interactions as a valued member of the community:
 
@@ -69,6 +83,10 @@ In order to foster both a safe and productive environment, we encourage our comm
   - **Always be honest.**\
     Don’t knowingly share incorrect information or intentionally mislead other сommunity participants - шf you don’t know the answer to someone’s question but still want to help, you can try helping them research or find resources instead, moderators and higher contributors will also be active in community, so if you’re unsure of an answer, it’s likely a moderators will be able to help.
 
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
+
+#### Negative behaviour
+
 Examples of unacceptable behaviour by participants include, which is concatenated in parallel terms with terms of positive attitude of behaviour in previous statements, this are some rules, which you mustn't disobeye for much more healthier community:
 
 - Trolling, insulting/derogatory comments, public or private harassment.
@@ -81,6 +99,8 @@ Examples of unacceptable behaviour by participants include, which is concatenate
 - Drug promotion of any kind.
 - Attacking personal tastes.
 - Other conduct which you know could reasonably be considered inappropriate in a professional setting.
+
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
 
 ### Enforcement
 
@@ -96,7 +116,11 @@ Any report will be reviewed and investigated and will result in a response that 
 
 Project hold the right and responsibility to remove comments or other contributions that are not aligned to this contributor covenant, or to ban temporarily or permanently any members for other behaviours that they deem inappropriate, threatening, offensive, or harmful.
 
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
+
 ### Attribution
+
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
 
 For answers to common questions about this code of conduct, see the FAQ at link with specified article and as for the translations: they are avalaible at also specified article-link.
 
