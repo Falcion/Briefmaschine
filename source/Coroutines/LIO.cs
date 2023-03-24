@@ -36,11 +36,11 @@ namespace Briefmaschine.Coroutines
 
             string path = Path.Combine(dest, file);
 
-            if(!Directory.Exists(dest))
+            if (!Directory.Exists(dest))
                 Directory.CreateDirectory(dest);
 
-            if(!File.Exists(path))
-                using(var stream = File.Create(path))
+            if (!File.Exists(path))
+                using (var stream = File.Create(path))
                 {
                     byte[] message = Encoding.UTF8.GetBytes($"[INFO/INIT][STACKFRAME: UNDEFINED] | {DateTime.Now:dd.MM.yyyy HH:mm:ss} - Created first instance for logs!" + "\n");
 
@@ -66,7 +66,7 @@ namespace Briefmaschine.Coroutines
         /// </exception>
         public static void InjectIO(string message, string? path)
         {
-            if(path != null)
+            if (path != null)
             {
                 string? dest = Path.GetDirectoryName(path);
 
@@ -86,16 +86,107 @@ namespace Briefmaschine.Coroutines
             {
                 string? keypath = Environment.GetEnvironmentVariable("LOGS_PATH");
 
-                if(keypath == null) EnsureIO();
+                if (keypath == null) EnsureIO();
             }
 
             path = Environment.GetEnvironmentVariable("LOGS_PATH");
 
-            using(var writer = File.AppendText(path!))
+            using (var writer = File.AppendText(path!))
             {
                 writer.Write(message + "\n");
                 writer.Close();
             }
+        }
+
+
+        /// <summary>
+        /// Method flushing current audit instance in IO of logger
+        /// </summary>
+        /// <param name="path">
+        /// String representing fullpath to future IO file of logs which in case of nullable, method replaces with ENV value
+        /// </param>
+        /// <exception cref="ArgumentNullException">
+        /// Exception representing a situation, when method can't create any form of path to IO instance from given parameter
+        /// </exception>
+        public static void FlushIO(string? path)
+        {
+            if (path != null)
+            {
+                string? dest = Path.GetDirectoryName(path);
+
+#pragma warning disable S3928
+                if (dest == null || dest == string.Empty)
+                    throw new ArgumentNullException(nameof(dest), PATH_EXCEPTION_MESSAGE);
+
+                string? file = Path.GetFileName(path);
+
+                if (file == null || file == string.Empty)
+                    throw new ArgumentNullException(nameof(file), PATH_EXCEPTION_MESSAGE);
+#pragma warning restore S3928
+
+                using (var writer = File.OpenWrite(path))
+                {
+                    writer.Write(Array.Empty<byte>(), 0, 0);
+                    writer.Close();
+                }
+
+                return;
+            }
+            else
+            {
+                string? keypath = Environment.GetEnvironmentVariable("LOGS_PATH");
+
+                if (keypath == null) EnsureIO();
+            }
+
+            path = Environment.GetEnvironmentVariable("LOGS_PATH");
+
+            using (var writer = File.OpenWrite(path!))
+            {
+                writer.Write(Array.Empty<byte>(), 0, 0);
+                writer.Close();
+            }
+        }
+
+        /// <summary>
+        /// Method deleting current audit instance in IO of logger
+        /// </summary>
+        /// <param name="path">
+        /// String representing fullpath to future IO file of logs which in case of nullable, method replaces with ENV value
+        /// </param>
+        /// <exception cref="ArgumentNullException">
+        /// Exception representing a situation, when method can't create any form of path to IO instance from given parameter
+        /// </exception>
+        public static void DestroyIO(string? path)
+        {
+            if (path != null)
+            {
+                string? dest = Path.GetDirectoryName(path);
+
+#pragma warning disable S3928
+                if (dest == null || dest == string.Empty)
+                    throw new ArgumentNullException(nameof(dest), PATH_EXCEPTION_MESSAGE);
+
+                string? file = Path.GetFileName(path);
+
+                if (file == null || file == string.Empty)
+                    throw new ArgumentNullException(nameof(file), PATH_EXCEPTION_MESSAGE);
+#pragma warning restore S3928
+
+                File.Delete(path);
+
+                return;
+            }
+            else
+            {
+                string? keypath = Environment.GetEnvironmentVariable("LOGS_PATH");
+
+                if (keypath == null) EnsureIO();
+            }
+
+            path = Environment.GetEnvironmentVariable("LOGS_PATH");
+
+            File.Delete(path!);
         }
     }
 }
