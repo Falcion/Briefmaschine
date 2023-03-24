@@ -20,7 +20,7 @@
         /// <summary>
         /// Nullable instance constructor for pairs
         /// </summary>
-        public Pair(){}
+        public Pair() { }
 
         /// <summary>
         /// Instance constructor for pairs
