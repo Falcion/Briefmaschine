@@ -1,7 +1,6 @@
-﻿using System.Diagnostics;
-
+﻿using Briefmaschine.Coroutines;
 using Briefmaschine.Objects;
-using Briefmaschine.Coroutines;
+using System.Diagnostics;
 
 namespace Briefmaschine
 {
@@ -22,7 +21,7 @@ namespace Briefmaschine
         /// <summary>
         /// Static reference to instance of an logger's engine
         /// </summary>
-        private static readonly Logger? instance = new Logger();
+        private static readonly Logger? instance = new();
 
         /// <summary>
         /// An const integer value representing frames count for stackfrace in instance of logging methods
@@ -32,7 +31,7 @@ namespace Briefmaschine
         /// <summary>
         /// Nullable instance constructor for logger's engine
         /// </summary>
-        public Logger(){}
+        public Logger() { }
 
         /// <summary>
         /// Instance constructor of logger's engine
@@ -163,7 +162,7 @@ namespace Briefmaschine
 
             string? method_target = string.Empty;
 
-            if(stackframe != null)
+            if (stackframe != null)
             {
                 method_target = stackframe.GetMethod()?.Name;
 
@@ -173,7 +172,7 @@ namespace Briefmaschine
 
             int index = entry.IndexOf("PLACEHOLDER");
 
-            switch(entry_type)
+            switch (entry_type)
             {
                 case Entries.INFO:
                     if (index > -1)
@@ -213,7 +212,7 @@ namespace Briefmaschine
 
             Console.ResetColor();
 
-            if(is_io)
+            if (is_io)
             {
                 string? path = Environment.GetEnvironmentVariable("LOGS_PATH");
 
@@ -279,7 +278,7 @@ namespace Briefmaschine
                 custom_type = "CUSTOM";
 
             if (colors == null)
-                colors = new Pair<ConsoleColor>(ConsoleColor.White, 
+                colors = new Pair<ConsoleColor>(ConsoleColor.White,
                                                 ConsoleColor.Black);
 
             if (is_io == null)
@@ -294,9 +293,9 @@ namespace Briefmaschine
 
             Console.ResetColor();
 
-            if(Convert.ToBoolean(is_io))
+            if (Convert.ToBoolean(is_io))
             {
-                if(path != null)
+                if (path != null)
                 {
                     string? dest = Path.GetDirectoryName(path);
 
