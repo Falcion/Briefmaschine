@@ -101,10 +101,10 @@ Contributions are what make open source community such an interest place to be i
 
 If you think that you can help this project become better but think its not so important/realizable in the current situtation or for a full contribution, use issues block, otherwise there is a guideline and policy for contributing.
 
-If you want to contribute to this project, please, read contributioning policy and commit convention, this repository works with CLA, [Angular.js commiting convention](https://github.com/angular/angular/blob/main/CONTRIBUTING.md) and works on automated deployment system.
+If you want to contribute to this project, please, read contributioning policy and commit convention, this repository works with CLA, commits convention and on automated deployment system.
 
-- [Commit convention](./.github/docs/COMMIT_CONVENTION.md);
-- [Contributioning policy](./.github/CONTRIBUTING.md);
+- [Commit convention](https://github.com/Falcion/Briefmaschine/blob/master/.github/docs/COMMIT_CONVENTION.md);
+- [Contributioning policy](https://github.com/Falcion/Briefmaschine/blob/master/.github/CONTRIBUTING.md);
 
 **For one-single file contributioning, use a more quicker way without forking the repository through website.**
 

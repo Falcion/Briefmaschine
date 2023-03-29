@@ -11,8 +11,8 @@
     <Authors>Falcion</Authors>
     <Description>.NET package about logging audit idea with IO submodule and system of constructing and colouring messages</Description>
     <Copyright>MIT License</Copyright>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-	<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+	  <PackageLicenseFile>license.md</PackageLicenseFile>
     <RepositoryUrl>https://github.com/Falcion/Briefmaschine/</RepositoryUrl>
     <PackageTags>package;dotnet;logging;</PackageTags>
     <IncludeSymbols>True</IncludeSymbols>
@@ -34,11 +34,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\LICENSE.md">
+    <None Include="./license.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="readme.md">
+    <None Include="./readme.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
