@@ -1,14 +1,14 @@
-- inspired by [Angular.js](https://github.com/angular/angular) commiting and contributioning conventions: for more, visit their repository and see the infrastructure itself.
+Conventional commits specification is a lightweight convention on top of commit messages, it provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of - this convention dovetails with , by describing the features, fixes, and breaking changes made in commit messages.
 
-Comitting conventions
+- created with: https://www.conventionalcommits.org/en/v1.0.0/
+
+Comitting convention
 ---------------------
 
 For consistency throughout the source code, keep these rules in mind as you are working with project's open source:
 
 - all features or bug fixes must be tested;
 - all public API methods must be documented;
-
-Inspired by [Azure](https://github.com/MicrosoftDocs/azure-devops/docs) and [Angular.js](https://github.com/angular/angular) project has very precise rules over how GIT commit messages must be formatted - this format leads to easier to read commit history.
 
 Each commit message consists of a header, a body, and a footer:
 
@@ -34,7 +34,7 @@ Construction of header of commit's message is a joint of multiple params which d
 
 ```html
 Final structure of HEADER param:
-<TYPE>[<SCOPE>]: <SUMMARY>
+<TYPE>(<SCOPE>): <SUMMARY>
 ```
 
 - param `<TYPE>` is defined by a range of categories, there is a list of them:\
@@ -90,7 +90,6 @@ Content of the commit message body should contain:
     Change reverts commit [SHA]
     ```
 - a clear description of the reason for reverting the commit message;
-
 
 Signing the CLA
 ---------------

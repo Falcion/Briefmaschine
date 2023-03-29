@@ -1,31 +1,3 @@
-<div align="center">
-    <a href="https://github.com/Falcion/Briefmaschine/actions/workflows/codeql.yml"><img src="https://github.com/Falcion/Briefmaschine/actions/workflows/codeql.yml/badge.svg" alt="codeql"/></a>
-    <a href="https://github.com/Falcion/Briefmaschine/actions/workflows/dotnet.yml"><img src="https://github.com/Falcion/Briefmaschine/actions/workflows/dotnet.yml/badge.svg" alt="dotnet"/></a>
-    <a href="https://github.com/Falcion/Briefmaschine/graphs/contributors"><img src="https://img.shields.io/github/contributors/Falcion/Briefmaschine" alt="contributors"/></a>
-    <a href="https://github.com/Falcion/Briefmaschine/stargazers"><img src="https://img.shields.io/github/stars/Falcion/Briefmaschine" alt="stargazers"/></a>
-    <a href="https://github.com/Falcion/Briefmaschine/forks"><img src="https://img.shields.io/github/forks/Falcion/Briefmaschine" alt="forks"/></a>
-    <a href="https://github.com/Falcion/Briefmaschine/issues"><img src="https://img.shields.io/github/issues/Falcion/Briefmaschine" alt="issues"/></a>
-    <a href="https://github.com/Falcion/Briefmaschine/commits"><img src="https://img.shields.io/github/last-commit/Falcion/Briefmaschine" alt="commit-activity"/></a>
-    <a href="https://www.nuget.org/packages/Briefmaschine"><img src="https://img.shields.io/nuget/dt/Briefmaschine" alt="downloads"/></a>
-</div>
-
-<br/>
-<div align="center">
-    <img src="./.github/images/icon.png" alt="icon" width="160" height="160"/>
-    <h3>Briefmaschine</h3>
-    <p>Deliver your message in colours and bytes.
-    <br/>
-    <a href="https://github.com/Falcion/Briefmaschine/wiki/"><strong>«Explore the docs»</strong></a>
-    <br/>
-    <br/>
-    <a href="https://github.com/Falcion/Briefmaschine/tags/">View tags</a>
-    /
-    <a href="https://github.com/Falcion/Briefmaschine/issues/new?assignees=Falcion&labels=Error&template=issue-about-bug.md&title=ERROR%3A+Enter+the+header+of+an+issue">Report a bug</a>
-    /
-    <a href="https://www.nuget.org/packages/Briefmaschine/">NUGET package</a>
-    </p>
-</div>
-
 <!-- README introduction:
  Describe your project from unknown perspective and tell,
  what it does and try to interest contributor or user to
@@ -48,8 +20,6 @@ Project was created, inspired and built with this wonderfuls:
 - https://code.visualstudio.com/
 - sophisticated with: https://github.com/angular/angular/
 
-<p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
-
 Getting started
 ---------------
 
@@ -62,8 +32,6 @@ Before using this application, ensure you met this requirements:
 - Any potentional IDE or text-editor with .NET native support (better if with support of NUGET);
 - Downloaded .NET SDK on your working machine;
 - \* if you desire to contribute to the project, also downloaded [Node.js](https://nodejs.org/) on your machine for integration with commits linting and auto-changelogs;
-
-<p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
 
 ### Installation
 
@@ -87,8 +55,6 @@ Process of installation within NUGET package manager in VS:
 
 If you use a different IDE without native support for NUGET, read this article: [using new commands in .NET]( https://stackoverflow.com/questions/40675162/install-a-nuget-package-in-visual-studio-code/).
 
-<p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
-
 Usage
 -----
 
@@ -99,8 +65,6 @@ Project, because of its simplicity in common sense, doesn't have any direct idea
 - automated constructor for pattern-constructed log messages;
 
 If you want to use this project in your own, just install it in and reference it as namespace: nothing special.
-
-<p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
 
 <!-- Roadmap:
  Create, design and write any roadmap you want: you
@@ -117,9 +81,9 @@ Roadmap
 - [x] Implement XML-documentation into the package's code;
 - [x] Write an infrastructure in the repository;
 - [x] Design and publish first completed changelog;
-- [x] Publish package on NUGET.
-
-<p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
+- [x] Publish package on NUGET;
+- [x] Redesign some IO modules and implement bigger infrastructure;
+- [x] Reupdate and finish working with technical documentation of project (not documentation FOR project);
 
 <!-- Contributioning idea:
  Contributors, contributing guidelines and other: here you can type random 
@@ -139,14 +103,12 @@ If you think that you can help this project become better but think its not so i
 
 If you want to contribute to this project, please, read contributioning policy and commit convention, this repository works with CLA, commits convention and on automated deployment system.
 
-- [Commit convention](./.github/docs/COMMIT_CONVENTION.md);
-- [Contributioning policy](./.github/CONTRIBUTING.md);
+- [Commit convention](https://github.com/Falcion/Briefmaschine/blob/master/.github/docs/COMMIT_CONVENTION.md);
+- [Contributioning policy](https://github.com/Falcion/Briefmaschine/blob/master/.github/CONTRIBUTING.md);
 
 **For one-single file contributioning, use a more quicker way without forking the repository through website.**
 
 More about it in this article: in [official GIT docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork/) about syncing one-file fork.
-
-<p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
 
 <!-- License:
  Paragraph about distribution policy in this repository and
@@ -167,17 +129,12 @@ This README was inspired by this - [best README template](https://github.com/oth
  of emergency.
  -->
 
-<p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
-
-
 Contact
 -------
 
 Any public contact information for developer either team can be acquired here, in other case, use issues and discussions.
 
 - DEV.TO page of developer: https://dev.to/falcion/
-
-<p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>
 
 <!-- Acknowledgements:
  Paragraph of this created for contributions and
@@ -192,5 +149,3 @@ Acknowledgements
 - https://gitignore.io/
 - https://gitattributes.io/
 - [README template](https://github.com/othneildrew/Best-README-Template/)
-
-<p align="right"><a href="#readme-top" title="Back to the top of README">[^]</a></p>

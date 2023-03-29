@@ -1,15 +1,20 @@
-﻿using System.Diagnostics;
-
+﻿using Briefmaschine.Coroutines;
 using Briefmaschine.Objects;
-using Briefmaschine.Coroutines;
+using Briefmaschine.Objects.Tupples;
+using System.Diagnostics;
 
 namespace Briefmaschine
 {
     /// <summary>
     /// Class containing basic constructors for instances of logger and its static methods
     /// </summary>
-    public sealed class Logger
+    public class Logger
     {
+        /// <summary>
+        /// Const string representing default common message for exceptions in constructors for logger's instance
+        /// </summary>
+        private const string PREDEFINED_ID_EXCEPTION = "Can't create an instance of logger with already existing in ENV ID! Please, define nullable ID in logger's constructor or use other ID!";
+
         /// <summary>
         /// Private string representing name of current logger's instace
         /// </summary>
@@ -22,7 +27,7 @@ namespace Briefmaschine
         /// <summary>
         /// Static reference to instance of an logger's engine
         /// </summary>
-        private static readonly Logger? instance = new Logger();
+        private static readonly Logger? instance = new();
 
         /// <summary>
         /// An const integer value representing frames count for stackfrace in instance of logging methods
@@ -32,7 +37,7 @@ namespace Briefmaschine
         /// <summary>
         /// Nullable instance constructor for logger's engine
         /// </summary>
-        public Logger(){}
+        public Logger() { }
 
         /// <summary>
         /// Instance constructor of logger's engine
@@ -54,9 +59,26 @@ namespace Briefmaschine
         /// <param name="id">
         /// String representing the ID of constructed instance
         /// </param>
+        /// <exception cref="ArgumentNullException">
+        /// Exception representing a situation, when constructor can't define logger with given ID because one already exists in 
+        /// </exception>
         public Logger(string name, string id) : this(name)
         {
             this.id = id;
+
+            if (id != null)
+            {
+                string? ENV_ID = Environment.GetEnvironmentVariable("ID");
+
+                if (ENV_ID == null)
+                    throw new ArgumentNullException(nameof(id), PREDEFINED_ID_EXCEPTION);
+                if (ENV_ID == $"{id}_ENV")
+#pragma warning disable S3928
+                    throw new ArgumentException(PREDEFINED_ID_EXCEPTION, nameof(id) + "+" + nameof(ENV_ID));
+#pragma warning restore S3928 
+
+                Environment.SetEnvironmentVariable("ID", $"{id}_ENV");
+            }
         }
 
         /// <summary>
@@ -163,7 +185,7 @@ namespace Briefmaschine
 
             string? method_target = string.Empty;
 
-            if(stackframe != null)
+            if (stackframe != null)
             {
                 method_target = stackframe.GetMethod()?.Name;
 
@@ -173,7 +195,7 @@ namespace Briefmaschine
 
             int index = entry.IndexOf("PLACEHOLDER");
 
-            switch(entry_type)
+            switch (entry_type)
             {
                 case Entries.INFO:
                     if (index > -1)
@@ -213,7 +235,7 @@ namespace Briefmaschine
 
             Console.ResetColor();
 
-            if(is_io)
+            if (is_io)
             {
                 string? path = Environment.GetEnvironmentVariable("LOGS_PATH");
 
@@ -279,7 +301,7 @@ namespace Briefmaschine
                 custom_type = "CUSTOM";
 
             if (colors == null)
-                colors = new Pair<ConsoleColor>(ConsoleColor.White, 
+                colors = new Pair<ConsoleColor>(ConsoleColor.White,
                                                 ConsoleColor.Black);
 
             if (is_io == null)
@@ -294,9 +316,9 @@ namespace Briefmaschine
 
             Console.ResetColor();
 
-            if(Convert.ToBoolean(is_io))
+            if (Convert.ToBoolean(is_io))
             {
-                if(path != null)
+                if (path != null)
                 {
                     string? dest = Path.GetDirectoryName(path);
 

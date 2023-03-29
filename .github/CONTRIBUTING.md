@@ -6,6 +6,8 @@
 - [Comitting conventions](#comitting-conventions)
 - [Signing the CLA](#signing-the-cla)
 
+Hundreds and hundreds amount of developers across the world united build the contributor world we know today: and we fortunate to be in such a beatiful world, so, for any foreign developer, which wants to make a contribution to this project - there are some conventions and guidelines he must met before making any changes to not make things diffucult for anyone.
+
 Guidelines for contributions
 ----------------------------
 
@@ -21,6 +23,8 @@ We appreciate community contributions to project or documentation, the following
 - **DO** blog and tweet (or whatever) about your contributions if you like!
 
 Following these guidelines will ensure a better experience for you and for us.
+
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
 
 Guidelines for submissions
 --------------------------
@@ -39,6 +43,8 @@ Developer require minimal reproduction to save maintainers time and ultimately b
 
 Unfortunately, we are not able to investigate or fix bugs without minimal reproduction, so if we don't hear back from you, we are goung to close an issue that doesn't have enough info to be reproduced.
 
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
+
 ### Submitting pull request (PR)
 
 Before submitting your PR consider to follow these guidelines:
@@ -52,7 +58,9 @@ Before submitting your PR consider to follow these guidelines:
 7. follow coding conventions or write the simillar to existing if it breaches existing conventions;
 8. commit your changes using a descriptive commit message that follows [CMC (or commit message convention)](./docs/COMMIT_CONVENTION.md), adherence, to these conventions is necessary because release notes are automatically generated from these messages;
 9. push your branch to the repository;
-10. on Github, send a PR to the main production branch;
+10. on GITHUB, send a PR to the main production branch;
+
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
 
 
     ```powershell
@@ -77,7 +85,9 @@ If we ask for changes via code reviews then:
     git push
     ```
 
-    For more info on working with fixup commits look for an - [Angular.js example](https://github.com/angular/angular/blob/main/docs/FIXUP_COMMITS.md).
+    For more info on working with fixup commits look for an - [MD article in Angular documentation](https://github.com/angular/angular/blob/main/docs/FIXUP_COMMITS.md).
+
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
 
 **Updating the commit message.**
 
@@ -95,6 +105,8 @@ A reviewer might often suggest changes to a commit message (for example, to add 
 
 > If you need to update the commit message of an earlier commit, you can use rebase in interactive mode, look for the GIT docs for more details about this procedure - [interactive mode with GIT rebase](https://git-scm.com/docs/git-rebase#_interactive_mode).
 
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
+
 **After your pull request is merged.**
 
 If your PR was merged, you can safely delete your branch and pull the changes from the main upstream repository (same within forked repository):
@@ -111,6 +123,8 @@ If your PR was merged, you can safely delete your branch and pull the changes fr
     git pull -ff upstream master
     ```
 
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
+
 Comitting conventions
 -----------------
 
@@ -121,8 +135,12 @@ For consistency throughout the source code, keep these rules in mind as you are 
 
 For advanced commiting convention, see specified documentation file - [COMMIT CONVENTION](docs/COMMIT_CONVENTION.md).
 
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
+
 Signing the CLA
 ---------------
+
+<p align="right"><a href="#readme-top" title="Back to the top of MD file">[^]</a></p>
 
 Sometimes you can be asked to sign the CLA (or contributor license agreement) before sending the PR: for any code changes to be accepted, the CLA must be signed - its a quick and easy process.
 
