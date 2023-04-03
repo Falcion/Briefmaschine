@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.1](https://github.com/mokkapps/changelog-generator-demo/compare/v1.0.0...v1.1.1) (2023-04-03)
+
+
+### Features
+
+### Bug fixes
+
+* **core:** fix id mechanic and visual of output via [#8](https://github.com/Falcion/Briefmaschine+git/issues/8) ([49d7dea](https://github.com/mokkapps/changelog-generator-demo/commits/49d7deaaabb71c31274cef092fa018ec6600e542))
+* **io:** fix flushing method in io via [#9](https://github.com/Falcion/Briefmaschine+git/issues/9) ([93bfc7a](https://github.com/mokkapps/changelog-generator-demo/commits/93bfc7a95ba23b5f3cec62a3e40018f5949ff816))
+
 ## [1.1.0](https://github.com/mokkapps/changelog-generator-demo/compare/v1.0.0...v1.1.0) (2023-03-29)
 
 
