@@ -68,16 +68,14 @@ namespace Briefmaschine
 
             if (id != null)
             {
-                string? ENV_ID = Environment.GetEnvironmentVariable("ID");
+                string? ENV_ID = Environment.GetEnvironmentVariable($"{id}_ENV");
 
-                if (ENV_ID == null)
-                    throw new ArgumentNullException(nameof(id), PREDEFINED_ID_EXCEPTION);
                 if (ENV_ID == $"{id}_ENV")
 #pragma warning disable S3928
                     throw new ArgumentException(PREDEFINED_ID_EXCEPTION, nameof(id) + "+" + nameof(ENV_ID));
 #pragma warning restore S3928 
 
-                Environment.SetEnvironmentVariable("ID", $"{id}_ENV");
+                Environment.SetEnvironmentVariable($"{id}_ENV", $"{id}_ENV");
             }
         }
 
@@ -97,7 +95,7 @@ namespace Briefmaschine
         {
             string datetime = DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss");
 
-            string raw_message = $"/{code_pos}[STACKTRACE: PLACEHOLDER] {datetime} - {message}";
+            string raw_message = $"/{code_pos}][STACKTRACE: PLACEHOLDER] {datetime} - {message}";
 
             Reconstructor(raw_message, is_io, Entries.INFO);
         }
@@ -118,7 +116,7 @@ namespace Briefmaschine
         {
             string datetime = DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss");
 
-            string raw_message = $"/{code_pos}[STACKTRACE: PLACEHOLDER] {datetime} - {message}";
+            string raw_message = $"/{code_pos}][STACKTRACE: PLACEHOLDER] {datetime} - {message}";
 
             Reconstructor(raw_message, is_io, Entries.WARN);
         }
@@ -139,7 +137,7 @@ namespace Briefmaschine
         {
             string datetime = DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss");
 
-            string raw_message = $"/{code_pos}[STACKTRACE: PLACEHOLDER] {datetime} - {message}";
+            string raw_message = $"/{code_pos}][STACKTRACE: PLACEHOLDER] {datetime} - {message}";
 
             Reconstructor(raw_message, is_io, Entries.SUCCESS);
         }
@@ -160,7 +158,7 @@ namespace Briefmaschine
         {
             string datetime = DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss");
 
-            string raw_message = $"/{code_pos}[STACKTRACE: PLACEHOLDER] {datetime} - {message}";
+            string raw_message = $"/{code_pos}][STACKTRACE: PLACEHOLDER] {datetime} - {message}";
 
             Reconstructor(raw_message, is_io, Entries.ERROR1);
         }
@@ -192,6 +190,12 @@ namespace Briefmaschine
                 if (method_target == null)
                     method_target = "UNKNOWN";
             }
+
+            method_target = method_target.Remove(method_target.IndexOf('<'), 1);
+            method_target = method_target.Remove(method_target.IndexOf('>'), 1);
+            method_target = method_target.Remove(method_target.IndexOf('$'), 1);
+
+            method_target = method_target.ToUpper();
 
             int index = entry.IndexOf("PLACEHOLDER");
 
