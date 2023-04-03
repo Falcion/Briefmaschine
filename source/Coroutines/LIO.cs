@@ -124,10 +124,10 @@ namespace Briefmaschine.Coroutines
                     throw new ArgumentNullException(nameof(file), PATH_EXCEPTION_MESSAGE);
 #pragma warning restore S3928
 
-                using (var writer = File.OpenWrite(path))
+                using(var stream = new StreamWriter(path, false)) 
                 {
-                    writer.Write(Array.Empty<byte>(), 0, 0);
-                    writer.Close();
+                    stream.Write(string.Empty);
+                    stream.Close();
                 }
 
                 return;
@@ -141,10 +141,10 @@ namespace Briefmaschine.Coroutines
 
             path = Environment.GetEnvironmentVariable("LOGS_PATH");
 
-            using (var writer = File.OpenWrite(path!))
+            using(var stream = new StreamWriter(path!, false)) 
             {
-                writer.Write(Array.Empty<byte>(), 0, 0);
-                writer.Close();
+                stream.Write(string.Empty);
+                stream.Close();
             }
         }
 
