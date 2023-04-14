@@ -1,4 +1,4 @@
-﻿namespace Briefmaschine.Objects.Tupples
+﻿namespace Briefmaschine.Objects.Multiples
 {
     /// <summary>
     /// Object representing a trupple of generic type parameters
