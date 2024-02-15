@@ -14,11 +14,11 @@
   "project": {
     "version": "0.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\falci\\OneDrive\\Desktop\\Secretory ARGORIA\\Grossplunner der protokole\\Protokol ZUSTAND\\source\\Zustand.csproj",
+      "projectUniqueName": "C:\\Users\\falci\\OneDrive\\Desktop\\Secretory ARGORIA\\Grossplunner der protokole\\Protokol BRIEF\\source\\Zustand.csproj",
       "projectName": "Zustand",
-      "projectPath": "C:\\Users\\falci\\OneDrive\\Desktop\\Secretory ARGORIA\\Grossplunner der protokole\\Protokol ZUSTAND\\source\\Zustand.csproj",
+      "projectPath": "C:\\Users\\falci\\OneDrive\\Desktop\\Secretory ARGORIA\\Grossplunner der protokole\\Protokol BRIEF\\source\\Zustand.csproj",
       "packagesPath": "C:\\Users\\falci\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\falci\\OneDrive\\Desktop\\Secretory ARGORIA\\Grossplunner der protokole\\Protokol ZUSTAND\\source\\obj\\",
+      "outputPath": "C:\\Users\\falci\\OneDrive\\Desktop\\Secretory ARGORIA\\Grossplunner der protokole\\Protokol BRIEF\\source\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,63 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Versioning sync (from manifests)",
+            "type": "shell",
+            "command": "python",
+            "args": ["${workspaceFolder}/source/versync.py"],
+            "group": {
+                "kind": "none",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Preparing the C# project",
+            "type": "shell",
+            "command": "python",
+            "args": ["${workspaceFolder}/source/versync.py"],
+            "group": {
+                "kind": "none",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Generate SLN file (Shell)",
+            "type": "shell",
+            "command": "${workspaceFolder}/source/generate_sln.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Generate SLN file (Bash)",
+            "type": "shell",
+            "command": "bash",
+            "args": ["${workspaceFolder}/generate_sln.sh"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": ["Versioning sync (from manifests)", "Preparing the C# project","Generate SLN file (Shell)"],
+            "args": [
+                "build",
+                "${workspaceFolder}/source/Zustand.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
